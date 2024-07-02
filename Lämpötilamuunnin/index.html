@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles_muunnin.css">
+<title>Lämpötilamuunnin</title>
+</head>
+<body style="background-color:white;">
+
+<div class="textAreas">
+  <h1>Lämpötilamuunnin</h1>
+   <p id="absz"></p>
+  <p>&degC &rarr;&degF</p>
+ <p>&degF &rarr;&degC</p>
+</div>
+<br>
+<div class="container">
+  <div class="mainWindow">
+    <div class="warnBox">
+      <p style="color:red;" id="warnings"></p>
+      <p id="posResult"></p>
+      <p id="negResult"></p>
+      <hr class="viivat">
+      <p id="posResult1"></p>
+      <p id="negResult2"></p>
+    </div>
+  </div>   
+</div>
+<br>
+<div class="container2">
+ <div class="inputs">
+  <p class="note">Huom! Erota desimaalit pisteellä (0.2, 4.67...)</p>
+   <form name="fields">
+    <label for="number">Syötä luku</label>
+     <input id="number" name="givenInput" type="text" placeholder="kirjoita...">
+     <br>
+     <br>
+    </form>
+   <button class="namiska" onclick="checkNumbers()">Muunna</button>
+  <p style="background-color:#dbc3f7;">Muunnin laskee automaattisesti negatiivisen tuloksen</p> 
+ </div>
+</div>
+
+<script src="muunnin.js"></script>
+
+</body>
+</html>
